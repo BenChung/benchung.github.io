@@ -3,6 +3,26 @@ body {
 	height:100%;
 }
 
-body {
-  padding-top: 50px;
+
+#profile-picture {
+	width: 100%;
+	margin: 1em;
+}
+
+
+#info {
+	text-align: center;
+	margin: 1em;
+}
+
+.contact-type {
+	display:inline-block;
+	width: 50px;
+}
+
+.venue {
+	text-align: right;
+	display:inline-block;
+	width: 120px;
+	margin-right: 1em;
 }
