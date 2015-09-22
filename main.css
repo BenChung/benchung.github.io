@@ -6,7 +6,8 @@ body {
 
 #profile-picture {
 	width: 100%;
-	margin: 1em;
+	max-width:360px;
+	margin: 0 auto;
 }
 
 
