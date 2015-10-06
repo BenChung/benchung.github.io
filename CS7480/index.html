@@ -53,11 +53,12 @@
 					</p>
 					<p class="fragment">$\lambda x:\text{int}\rightarrow\text{int}.\\\;\;
 						\text{fix}\;\lambda r:(\mu \alpha.1+(\text{int} \times \alpha))\rightarrow(\mu \alpha.1+(\text{int} \times \alpha)).\\
-						\;\;\;\lambda y:(\mu \alpha.1+(\text{int} \times \alpha)).\\\;\;\;\text{case } (\text{unfold } y) \text{ of }\\ \;\;\;\;\;\text{inl}\;z\Rightarrow \text{inl}_{1+(\text{int} \times (\mu \alpha.1+(\text{int} \times \alpha)))} 1\\ \;\;\;\;\;\text{inr}\;z\Rightarrow \text{inr}_{1+(\text{int} \times (\mu \alpha.1+(\text{int} \times \alpha)))} < x\;z.1,  r\;z.2>$</p>
+						\;\;\;\lambda y:(\mu \alpha.1+(\text{int} \times \alpha)).\\\;\;\;\text{case } (\text{unfold } y) \text{ of }\\ \;\;\;\;\;\text{inl}\;z\Rightarrow \text{inl}_{1+(\text{int} \times (\mu \alpha.1+(\text{int} \times \alpha)))} 1\\ \;\;\;\;\;\text{inr}\;z\Rightarrow \text{inr}_{1+(\text{int} \times (\mu \alpha.1+(\text{int} \times \alpha)))} \\
+						\;\;\;\;\;\;\text{fold}_{\mu \alpha.1+(\text{int} \times \alpha)}< x\;z.1,  r\;z.2>$</p>
 				</section>
 
 				<section>
-					<p>$\text{fix}\;\lambda r.\;\lambda y.\\\;\;\;\text{case } y \text{ of }\\ \;\;\;\;\;\text{Unit}\;\Rightarrow 1\\ \;\;\;\;\;   < z1, z2 >\Rightarrow < x\;z1,  r\;z2>$</p>
+					<p>$\lambda x.\text{fix}\;\lambda r.\;\lambda y.\\\;\;\;\text{case } y \text{ of }\\ \;\;\;\;\;\text{Unit}\;\Rightarrow 1\\ \;\;\;\;\;   < z1, z2 >\Rightarrow < x\;z1,  r\;z2>$</p>
 				</section>
 
 				<section>
